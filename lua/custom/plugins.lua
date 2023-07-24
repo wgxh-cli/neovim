@@ -26,6 +26,13 @@ local plugins = {
       ensure_installed = { "rust", "lua", "bash" },
     },
   },
+  {
+    "folke/which-key.nvim" ,
+    keys = { "<leader>", "<localleader>" },
+  },
+  {
+    "folke/trouble.nvim",
+  }
 }
 
 return plugins
