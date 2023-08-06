@@ -128,4 +128,7 @@ require("lazy").setup({
     event = "VeryLazy",
     opts = {},
   },
+  {
+    "onsails/lspkind.nvim",
+  },
 })
