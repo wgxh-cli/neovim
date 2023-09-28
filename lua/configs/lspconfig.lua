@@ -1,3 +1,6 @@
 return function()
-  local _lsp = require("lspconfig")
+  local lsp = require("lspconfig")
+  local api = vim.api
+
+  lsp.tsserver.setup {}
 end

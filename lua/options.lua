@@ -5,6 +5,8 @@ vim.o.timeout = true
 vim.o.timeoutlen = 300
 vim.o.termguicolors = true
 vim.o.fillchars = "eob: "
+vim.o.conceallevel = 2
+vim.o.signcolumn = "yes"
 
 vim.g.editorconfig = true
 vim.g.mapleader = " "

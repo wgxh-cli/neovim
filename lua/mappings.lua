@@ -38,6 +38,22 @@ wk.register({
       o = { ":NvimTreeOpen<CR>", "Open file explorer" },
       c = { ":NvimTreeClose<CR>", "Close file explorer" },
     },
+
+    -- formatter.nvim
+    p = { ":Format<CR>", "Format without save" },
+    P = { ":FormatWrite<CR>", "Format and save" },
+
+    -- neorg
+    n = {
+      r = { ":Neorg workspace return<CR>", "Return to main project" },
+    },
+
+    -- trouble.nvim
+    c = {
+      name = "Diagnostic list (trouble.nvim)",
+      o = { function () require("trouble").open("workspace_diagnostics") end, "Open Trouble with workspace diagnostics" },
+      c = { function () require("trouble").close() end, "Close Trouble pane" },
+    },
   },
 
   -- flash.nvim
